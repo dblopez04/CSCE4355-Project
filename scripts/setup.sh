@@ -44,4 +44,4 @@ echo
 echo "Setup complete."
 echo
 
-psql -U postgres -h localhost -d retail_db -P footer=off -f sql/summary.sql
+psql -d "$DB" -P footer=off -f sql/summary.sql
