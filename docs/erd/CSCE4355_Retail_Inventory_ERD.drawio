@@ -1,0 +1,100 @@
+<mxfile host="app.diagrams.net" agent="ChatGPT">
+  <diagram id="retail-erd" name="Retail Inventory ERD">
+    <mxGraphModel dx="1154" dy="1091" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="suppliers" parent="1" style="swimlane;html=1;startSize=40;horizontal=1;rounded=0;fillColor=#E7EDF3;swimlaneFillColor=#FFFFFF;strokeColor=#566778;fontColor=#1F2937;fontSize=17;fontStyle=1;align=center;container=1;collapsible=0;" value="SUPPLIERS" vertex="1">
+          <mxGeometry height="185" width="405" x="70" y="95" as="geometry" />
+        </mxCell>
+        <mxCell id="suppliers_0" parent="suppliers" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=12;fontColor=#222222;spacingLeft=8;" value="PK  supplier_id : INT IDENTITY" vertex="1">
+          <mxGeometry height="25" width="385" x="9" y="43" as="geometry" />
+        </mxCell>
+        <mxCell id="suppliers_1" parent="suppliers" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=12;fontColor=#222222;spacingLeft=8;" value="supplier_name : VARCHAR(100) NOT NULL" vertex="1">
+          <mxGeometry height="25" width="385" x="9" y="72" as="geometry" />
+        </mxCell>
+        <mxCell id="suppliers_2" parent="suppliers" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=12;fontColor=#222222;spacingLeft=8;" value="contact_name : VARCHAR(100)" vertex="1">
+          <mxGeometry height="25" width="385" x="9" y="101" as="geometry" />
+        </mxCell>
+        <mxCell id="suppliers_3" parent="suppliers" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=12;fontColor=#222222;spacingLeft=8;" value="email : VARCHAR(100) UNIQUE" vertex="1">
+          <mxGeometry height="25" width="385" x="9" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="suppliers_4" parent="suppliers" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=12;fontColor=#222222;spacingLeft=8;" value="phone : VARCHAR(20)" vertex="1">
+          <mxGeometry height="25" width="385" x="9" y="159" as="geometry" />
+        </mxCell>
+        <mxCell id="employees" parent="1" style="swimlane;html=1;startSize=40;horizontal=1;rounded=0;fillColor=#E7EDF3;swimlaneFillColor=#FFFFFF;strokeColor=#566778;fontColor=#1F2937;fontSize=17;fontStyle=1;align=center;container=1;collapsible=0;" value="EMPLOYEES" vertex="1">
+          <mxGeometry height="214" width="405" x="660" y="95" as="geometry" />
+        </mxCell>
+        <mxCell id="employees_0" parent="employees" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=12;fontColor=#222222;spacingLeft=8;" value="PK  employee_id : INT IDENTITY" vertex="1">
+          <mxGeometry height="25" width="385" x="9" y="43" as="geometry" />
+        </mxCell>
+        <mxCell id="employees_1" parent="employees" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=12;fontColor=#222222;spacingLeft=8;" value="first_name : VARCHAR(50) NOT NULL" vertex="1">
+          <mxGeometry height="25" width="385" x="9" y="72" as="geometry" />
+        </mxCell>
+        <mxCell id="employees_2" parent="employees" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=12;fontColor=#222222;spacingLeft=8;" value="last_name : VARCHAR(50) NOT NULL" vertex="1">
+          <mxGeometry height="25" width="385" x="9" y="101" as="geometry" />
+        </mxCell>
+        <mxCell id="employees_3" parent="employees" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=12;fontColor=#222222;spacingLeft=8;" value="email : VARCHAR(100) UNIQUE" vertex="1">
+          <mxGeometry height="25" width="385" x="9" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="employees_4" parent="employees" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=12;fontColor=#222222;spacingLeft=8;" value="job_title : VARCHAR(50) NOT NULL" vertex="1">
+          <mxGeometry height="25" width="385" x="9" y="159" as="geometry" />
+        </mxCell>
+        <mxCell id="employees_5" parent="employees" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=12;fontColor=#222222;spacingLeft=8;" value="hire_date : DATE NOT NULL" vertex="1">
+          <mxGeometry height="25" width="385" x="9" y="188" as="geometry" />
+        </mxCell>
+        <mxCell id="products" parent="1" style="swimlane;html=1;startSize=40;horizontal=1;rounded=0;fillColor=#E7EDF3;swimlaneFillColor=#FFFFFF;strokeColor=#566778;fontColor=#1F2937;fontSize=17;fontStyle=1;align=center;container=1;collapsible=0;" value="PRODUCTS" vertex="1">
+          <mxGeometry height="214" width="405" x="70" y="415" as="geometry" />
+        </mxCell>
+        <mxCell id="products_0" parent="products" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=12;fontColor=#222222;spacingLeft=8;" value="PK  product_id : INT IDENTITY" vertex="1">
+          <mxGeometry height="25" width="385" x="9" y="43" as="geometry" />
+        </mxCell>
+        <mxCell id="products_1" parent="products" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=12;fontColor=#222222;spacingLeft=8;" value="product_name : VARCHAR(100) NOT NULL" vertex="1">
+          <mxGeometry height="25" width="385" x="9" y="72" as="geometry" />
+        </mxCell>
+        <mxCell id="products_2" parent="products" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=12;fontColor=#222222;spacingLeft=8;" value="FK  supplier_id : INT NOT NULL" vertex="1">
+          <mxGeometry height="25" width="385" x="9" y="101" as="geometry" />
+        </mxCell>
+        <mxCell id="products_3" parent="products" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=12;fontColor=#222222;spacingLeft=8;" value="price : NUMERIC(10,2) CHECK ≥ 0" vertex="1">
+          <mxGeometry height="25" width="385" x="9" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="products_4" parent="products" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=12;fontColor=#222222;spacingLeft=8;" value="stock_quantity : INT DEFAULT 0 CHECK ≥ 0" vertex="1">
+          <mxGeometry height="25" width="385" x="9" y="159" as="geometry" />
+        </mxCell>
+        <mxCell id="products_5" parent="products" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=12;fontColor=#222222;spacingLeft=8;" value="category : VARCHAR(50)" vertex="1">
+          <mxGeometry height="25" width="385" x="9" y="188" as="geometry" />
+        </mxCell>
+        <mxCell id="sales" parent="1" style="swimlane;html=1;startSize=40;horizontal=1;rounded=0;fillColor=#E7EDF3;swimlaneFillColor=#FFFFFF;strokeColor=#566778;fontColor=#1F2937;fontSize=17;fontStyle=1;align=center;container=1;collapsible=0;" value="SALES" vertex="1">
+          <mxGeometry height="214" width="405" x="660" y="415" as="geometry" />
+        </mxCell>
+        <mxCell id="sales_0" parent="sales" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=12;fontColor=#222222;spacingLeft=8;" value="PK  sale_id : INT IDENTITY" vertex="1">
+          <mxGeometry height="25" width="385" x="9" y="43" as="geometry" />
+        </mxCell>
+        <mxCell id="sales_1" parent="sales" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=12;fontColor=#222222;spacingLeft=8;" value="FK  product_id : INT NOT NULL" vertex="1">
+          <mxGeometry height="25" width="385" x="9" y="72" as="geometry" />
+        </mxCell>
+        <mxCell id="sales_2" parent="sales" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=12;fontColor=#222222;spacingLeft=8;" value="FK  employee_id : INT NOT NULL" vertex="1">
+          <mxGeometry height="25" width="385" x="9" y="101" as="geometry" />
+        </mxCell>
+        <mxCell id="sales_3" parent="sales" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=12;fontColor=#222222;spacingLeft=8;" value="quantity : INT CHECK &gt; 0" vertex="1">
+          <mxGeometry height="25" width="385" x="9" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="sales_4" parent="sales" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=12;fontColor=#222222;spacingLeft=8;" value="sale_date : TIMESTAMP DEFAULT CURRENT_TIMESTAMP" vertex="1">
+          <mxGeometry height="25" width="385" x="9" y="159" as="geometry" />
+        </mxCell>
+        <mxCell id="sales_5" parent="sales" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=12;fontColor=#222222;spacingLeft=8;" value="total_amount : NUMERIC(10,2) CHECK ≥ 0" vertex="1">
+          <mxGeometry height="25" width="385" x="9" y="188" as="geometry" />
+        </mxCell>
+        <mxCell id="supplier_product" edge="1" parent="1" source="suppliers" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#287A60;strokeWidth=2;startArrow=ERone;startFill=0;endArrow=ERmany;endFill=0;fontSize=12;fontColor=#287A60;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="products" value="supplies">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="employee_sale" edge="1" parent="1" source="employees" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#287A60;strokeWidth=2;startArrow=ERone;startFill=0;endArrow=ERmany;endFill=0;fontSize=12;fontColor=#287A60;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="sales" value="processes">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="product_sale" edge="1" parent="1" source="products" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#287A60;strokeWidth=2;startArrow=ERone;startFill=0;endArrow=ERmany;endFill=0;fontSize=12;fontColor=#287A60;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="sales" value="appears in">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
