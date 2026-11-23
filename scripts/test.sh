@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Runs the RBAC tests in sql/tests/.
-# Usage: scripts/run_tests.sh
+# Usage: ./scripts/test.sh
 set -e
 
 cd "$(dirname "$0")/.."
